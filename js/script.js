@@ -10,3 +10,16 @@ menuToggle.addEventListener("click", () => {
     isOpen ? "Close navigation menu" : "Open navigation menu"
   );
 });
+
+navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("nav-open");
+  
+      menuToggle.setAttribute("aria-expanded", "false");
+  
+      menuToggle.setAttribute(
+        "aria-label",
+        "Open navigation menu"
+      );
+    });
+  });
