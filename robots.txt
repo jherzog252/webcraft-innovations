@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://webcraftinnovations.ca/sitemap.xml
